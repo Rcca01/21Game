@@ -20,6 +20,7 @@
             android:layout_weight="0.1"/>
 
         <TextView
+            android:id="@+id/tvPontuacao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="0"
@@ -34,12 +35,14 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/btnProximaCarta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="PRÓXIMA CARTA"
             android:layout_marginBottom="10sp"/>
 
         <Button
+            android:id="@+id/btnRecomecar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="RECOMEÇAR O JOGO"/>
@@ -52,6 +55,7 @@
         >
 
         <ImageView
+            android:id="@+id/ivCarta"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/dama_de_espada"
