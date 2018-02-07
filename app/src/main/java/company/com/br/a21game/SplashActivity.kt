@@ -23,7 +23,7 @@ class SplashActivity : AppCompatActivity() {
         ivLogo.startAnimation(animacao)
 
         Handler().postDelayed({
-            val intent:Intent = Intent(this@SplashActivity,MainActivity::class.java)
+            val intent:Intent = Intent(this@SplashActivity,DadosJogadorActivity::class.java)
             startActivity(intent)
             this@SplashActivity.finish()
         },3000)

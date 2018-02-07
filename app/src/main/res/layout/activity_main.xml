@@ -7,6 +7,12 @@
     android:layout_height="match_parent"
     tools:context="company.com.br.a21game.MainActivity">
 
+    <TextView
+        android:id="@+id/nomeJogador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome Jogador"/>
+
     <FrameLayout
         android:id="@+id/frame"
         android:layout_width="0dp"
@@ -14,7 +20,7 @@
         app:layout_constraintBottom_toTopOf="@+id/navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/nomeJogador" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"

@@ -37,6 +37,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         changeFragment(GameFragment())
+
+        if(intent != null){
+            nomeJogador.setText("Bem vindo " + intent.getStringExtra("NOMEJOGADOR"))
+        }
+
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
     }
 }
